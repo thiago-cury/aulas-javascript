@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exemplo CSS JS - alterando alinhamento do título</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1 id="titulo">Exemplo CSS JS - alterando alinhamento do título</h1>
+
+    <button onclick="alterarAlinhamentoTitulo()">Mudar alinhamento do Titulo</button>
+
+    <script type="text/javascript">
+      function alterarAlinhamentoTitulo() {
+        var alinhamento = Number(prompt("Digite:\n1 - esquerda\n2 - direita\n3 - centralizado"));
+
+        if(alinhamento == 1) {
+          document.getElementById("titulo").style.textAlign = "left";
+        } else if(alinhamento == 2) {
+            document.getElementById("titulo").style.textAlign = "right";
+        } else {
+            document.getElementById("titulo").style.textAlign = "center";
+        }
+      }
+    </script>
+  </body>
+</html>
