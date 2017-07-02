@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Exemplo Calculadora básica completa + innerHTML</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<meta charset="utf-8">
+
+		<script type="text/javascript">
+
+			//Entrada de dados
+			var n1 = prompt("Digite o primeiro num: ");
+			var n2 = prompt("Digite o segundo num: ");
+
+			var op = prompt("Digite:\n1-somar\n2-subtrair\n3-dividir\n4-multiplicar");
+
+			//Convertendo entrada para número
+			var num1 = Number(n1);
+			var num2 = Number(n2);
+			var op = Number(op);
+
+			var resp=0;
+
+			//Testando a escolha do usuário				
+			switch(op){
+				case 1: resp = num1 + num2;
+					break;
+				case 2: resp = num1 - num2;
+					break;
+				case 3: resp = num1 / num2;
+					break;
+				case 4: resp = num1 * num2;
+					break;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Exemplo Calculadora básica completa</h1>
+
+		<!-- div que mostrará o resultado-->
+		<div id="resp">
+		</div>
+
+		<script type="text/javascript">
+			//Buscando a div "resp" para mostrar o resultado da calculadora.
+			document.getElementById("resp").innerHTML = "Resultado: " + resp;
+		</script>
+	</body>
+</html>
