@@ -3,16 +3,16 @@ Nesse repositório você encontrará todos exemplos das Aulas de JavaScript mini
 
 # Ordem de aprendizagem:
 
-## ex-js-variavel
+## 1 - ex-js-variavel
 
-## ex-js-alert
+## 2 - ex-js-alert
 
-## ex-js-onclick
+## 3 - ex-js-onclick
 
-## ex-js-alterando-cor-titulo
+## 4 - ex-js-alterando-cor-titulo
 
-## ex-js-alterando-alinhamento-titulo
+## 5 - ex-js-alterando-alinhamento-titulo
 
-## ex-js-calculadora-basica
+## 6 - ex-js-calculadora-basica
 
-## ex-js-calculadora-completa-com-inner
+## 7 - ex-js-calculadora-completa-com-inner
