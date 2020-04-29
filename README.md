@@ -16,3 +16,5 @@ Nesse repositório você encontrará todos exemplos das Aulas de JavaScript mini
 ## 6 - ex-js-calculadora-basica
 
 ## 7 - ex-js-calculadora-completa-com-inner
+
+## 8 - ex-js-formulario
