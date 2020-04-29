@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplo javascript formulário puro</title>
+  </head>
+  <body>
+    
+    <h1>Exemplo formulário com javascript puro</h1>
+    
+    <form name="cadastro">
+      <div>
+        <input type="text" id="name" placeholder="Digite o seu nome"> 
+      </div>
+      
+      <div>
+        <input type="text" id="telephone" placeholder="Digite o seu telefone"> 
+      </div>
+      
+      <div>
+        <input type="text" id="email" placeholder="Digite o seu email"> 
+      </div>
+      
+      <div>
+        <input type="number" id="age" placeholder="Digite a sua idade"> 
+      </div>      
+      
+      <div>
+        <button onclick="add()">Cadastar</button> 
+      </div>   
+      
+      <script type="text/javascript">
+      function add() {
+        
+        var contact = {}; //object
+        contact.name = document.getElementById("name").value;
+        contact.telephone = document.getElementById("telephone").value;
+        contact.email = document.getElementById("email").value;
+        contact.age = Number(document.getElementById("age").value);
+        contact.ageInMonths = function() {
+          return this.age * 12;
+        }
+        
+        alert("\nNome: " + contact.name
+            + "\nTelefone: " + contact.telephone
+            + "\nemail: " + contact.email
+            + "\nIdade: " + contact.age
+            + "\nIdade em meses: " + contact.ageInMonths());
+        
+      }  
+      </script>   
+    </form>
+  </body>
+</html>
